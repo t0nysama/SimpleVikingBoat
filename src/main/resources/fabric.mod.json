@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "tonys_viking_boat",
+  "version": "0.0.1-1.19.2",
+  "name": "tonys_viking_boat",
+  "authors": [
+    "t0nysama"
+  ],
+  "contact": {
+    "homepage": "https://pdglobal.app",
+    "sources": ""
+  },
+  "license": "GNU General Public License version 3 (GPLv3)",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.t0nysama.simplevikingboat.TonysVikingBoatMod"
+    ],
+    "client": [
+      "net.t0nysama.simplevikingboat.ClientInit"
+    ]
+  },
+  "mixins": [
+    "tonys_viking_boat.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "icon": "assets/modid/icon.png",
+  "suggests": {
+    "another-mod": "*"
+  }
+}
