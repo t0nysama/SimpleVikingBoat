@@ -578,16 +578,26 @@ public class tony_viking_boat extends EntityModel<Entity> {
 		.uv(0, 0).cuboid(-16.0F, 7.9F, -72.0F, 8.0F, 8.0F, 16.0F, new Dilation(0.0F)), ModelTransform.of(-24.0F, 8.0F, 112.0F, -3.1416F, 0.0F, 3.1416F));
 		return TexturedModelData.of(modelData, 64, 64);
 	}
+
 	@Override
-	public void setAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-	}
-	@Override
-	public void render(MatrixStack matrices, VertexConsumer vertexConsumer, int light, int overlay, float red, float green, float blue, float alpha) {
-		bone_1.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);
+	public void setAngles(Entity entity, float limbAngle, float limbDistance, float animationProgress, float headYaw, float headPitch) {
+
 	}
 
 	@Override
 	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
 
 	}
+	//@Override
+	//public void setAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+	//}
+	//@Override
+	//public void render(MatrixStack matrices, VertexConsumer vertexConsumer, int light, int overlay, float red, float green, float blue, float alpha) {
+	//	bone_1.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);
+	//}
+
+	//@Override
+	//public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, float red, float green, float blue, float alpha) {
+
+	//}
 }
